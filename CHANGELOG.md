@@ -1,4 +1,6 @@
 ## 2.0.0
+ * STORM-2045: fixed SpoutExecutor NPE
+ * STORM-2041: Make Java 8 as minimum requirement for 2.0 release
  * STORM-1256: port backtype.storm.utils.ZookeeperServerCnxnFactory-test to java
  * STORM-1251: port backtype.storm.serialization.SerializationFactory-test to java
  * STORM-1240: port backtype.storm.security.auth.authorizer.DRPCSimpleACLAuthorizer-test to java
@@ -142,6 +144,8 @@
  * STORM-1769: Added a test to check local nimbus with notifier plugin
 
 ## 1.1.0 
+ * STORM-2016: Topology submission improvement: support adding local jars and maven artifacts on submission
+ * STORM-1994: Add table with per-topology & worker resource usage and components in (new) supervisor and topology pages
  * STORM-2023: Add calcite-core to dependency of storm-sql-runtime
  * STORM-1839: Storm spout implementation for Amazon Kinesis Streams.
  * STORM-1988: Kafka Offset not showing due to bad classpath.
@@ -179,6 +183,8 @@
  * STORM-1868: Modify TridentKafkaWordCount to run in distributed mode
 
 ## 1.0.3
+ * STORM-2047: Add note to add logviewer hosts to browser whitelist
+ * STORM-2042: Nimbus client connections not closed properly causing connection leaks
  * STORM-2032: removes warning in case more than one metrics tuple is received
  * STORM-1594: org.apache.storm.tuple.Fields can throw NPE if given invalid field in selector
  * STORM-1995: downloadChunk in nimbus.clj should close the input stream
